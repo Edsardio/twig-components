@@ -20,7 +20,7 @@ class ComponentExtension extends AbstractExtension
     {
         return [
             new ComponentTokenParser($this->relativePath),
-            new SlotTokenParser()
+            new SlotTokenParser(),
         ];
     }
 }
