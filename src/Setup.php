@@ -6,9 +6,9 @@ use Twig\Environment;
 
 class Setup
 {
-    public static function init(Environment $twig, $relativePaths, $config = null)
+    public static function init(Environment $twig, $relativePath, $config = null)
     {
-        $twig->addExtension(new ComponentExtension($relativePaths));
+        $twig->addExtension(new ComponentExtension($relativePath));
 
         $twig->setLexer(
             (new ComponentLexer($twig))
