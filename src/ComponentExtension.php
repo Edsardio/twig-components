@@ -7,13 +7,13 @@ use Twig\Extension\AbstractExtension;
 class ComponentExtension extends AbstractExtension
 {
     /**
-     * @var []
+     * @var string
      */
     private $relativePath;
 
     public function __construct($relativePath)
     {
-        $this->relativePaths = rtrim($relativePath, DIRECTORY_SEPARATOR);
+        $this->relativePath = rtrim($relativePath, DIRECTORY_SEPARATOR);
     }
 
     public function getTokenParsers()
